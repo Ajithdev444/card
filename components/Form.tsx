@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <div className='bg-[#faf5f5] grid h-screen'>
+    <div className='bg-gray-300 grid h-screen'>
         <div className='bg-white p-10 w-80 h-auto text-center m-auto'>
   
           <div>
