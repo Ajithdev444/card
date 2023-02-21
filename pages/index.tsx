@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Hero from '@/components/Hero'
-import Form from '@/components/Form'
-import Development from '@/components/Development'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,10 +17,6 @@ export default function Home() {
       </Head>
       <main>
         <Hero/>
-        <Form/>
-        <Development/>
-      
-        
       </main>
     </>
   )
