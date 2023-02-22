@@ -12,25 +12,25 @@ const Development = () => {
             <div className='py-32 px-28 col-span-2 w-3/4'>
             <div className='mb-4'>
             <h1 className='text-base font-semibold text-[#272A3D]'>Development</h1>
-            <h2 className='text-lg font-bold text-[#323248]'>Compatible Inkjet Cartridge</h2>
+            <h2 className='text-lg font-bold text-[#323248] font-serif'>Compatible Inkjet Cartridge</h2>
             </div>
             <div>
                 <Image src={img2} alt='development' className='w-full h-44 object-cover rounded-md'/>
             </div>
             <div className='grid grid-cols-3 w-full py-6 gap-8'>
                 <div>
-                    <h2 className='text-base font-bold'>Life Advice Looking Through A Window</h2>
+                    <h2 className='text-base font-bold font-serif'>Life Advice Looking Through A Window</h2>
                     <p className='text-sm py-2'>Life is a journey of twists and turns,peaks and
                         valleys, mountains to climb and oceans to explore.
                     </p>
                 </div>
                 <div>
-                    <h2 className='text-base font-bold'>Choosing The Best Photo Printer</h2>
+                    <h2 className='text-base font-bold font-serif'>Choosing The Best Photo Printer</h2>
                     <p className='text-sm py-2'>Life is a journey of twists and turns,peaks and
                         valleys, mountains to climb and oceans to explore. </p>
                 </div>
                 <div>
-                    <h2 className='text-base font-bold'>Unmatched Toner Cartridge Quality 20
+                    <h2 className='text-base font-bold font-serif'>Unmatched Toner Cartridge Quality 20
                         Less Than Oem Price
                     </h2>
                     <p className='text-sm py-2'>Life is a journey of twists and turns,peaks and
@@ -44,7 +44,7 @@ const Development = () => {
             </div>
             <div className='bg-[#151D4B] w-1/5 h-60 my-52 mx-[-80px] rounded-md'>
                 <div className='p-8'>
-                <h2 className='text-base font-bold text-white'>Party Jokes Starting But Unnecessary</h2>
+                <h2 className='text-base font-bold text-white font-serif'>Party Jokes Starting But Unnecessary</h2>
                 <p className='text-sm text-white'>Life is a journey of twists and turns,peaks and
                         valleys, mountains to climb and oceans to explore.</p>
                  <button className='px-4 py-2 border-[1px] border-[#000] rounded-md font-semibold text-sm bg-white mt-6'>
