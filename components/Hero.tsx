@@ -9,9 +9,9 @@ import inter from '../public/inter.png'
 
 const Hero = () => {
   return (
-    <div className='grid bg-slate-700 h-screen'>
+    <div className='grid bg-[#17203F] h-screen'>
         <div className='grid grid-cols-4 m-auto mt-40 gap-6'>
-            <div className='bg-slate-900 shadow-md rounded-md overflow-hidden' >
+            <div className='bg-[#0F152B] shadow-md rounded-md overflow-hidden' >
                 <div className='w-full h-36 relative'>
                    <Image src={img1} alt='img1' fill className='object-cover'/>    
                 </div>
@@ -22,7 +22,7 @@ const Hero = () => {
                     <Image src={google} alt='google' width={50} height={200}/>
                 </div>
             </div>
-            <div className='bg-slate-900 shadow-md rounded-md overflow-hidden' >
+            <div className='bg-[#0F152B] shadow-md rounded-md overflow-hidden' >
                 <div className='w-full h-36 relative'>
                 <Image src={img1} alt='img1' fill className='object-cover'/>
                 </div>
@@ -33,7 +33,7 @@ const Hero = () => {
                     <Image src={uber} alt='uber' width={50} height={50}/>
                 </div>
             </div>
-            <div className='bg-slate-900 shadow-md rounded-md overflow-hidden'>
+            <div className='bg-[#0F152B] shadow-md rounded-md overflow-hidden'>
                 <div className='w-full h-36 relative'>
                   <Image src={img2} alt='img2' fill className='object-cover'/>
                 </div>
@@ -44,7 +44,7 @@ const Hero = () => {
                     <Image src={inter} alt='intercom' width={50} height={50}/>
                 </div>
             </div>
-            <div className='border-2 border-slate-800 rounded-md text-slate-300 flex justify-center items-center'>
+            <div className='border-2 border-[#121B38] rounded-md text-slate-300 flex justify-center items-center'>
                 <div className='flex flex-col space-y-3 items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 24 24"

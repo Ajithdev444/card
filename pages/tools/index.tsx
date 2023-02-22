@@ -11,7 +11,7 @@ const index = () => {
   return (
     <div className='bg-[#10182F] h-screen flex justify-center items-center'>
         <div className='bg-white h-4/5 w-10/12 rounded-md'>
-            <div className='text-center'>
+            <div className='text-center py-6'>
                 <h1 className='text-base font-bold' >Recently added</h1>
                 <p className='text-xs'>The latest tools that help you and your team
                     building software better,together.
