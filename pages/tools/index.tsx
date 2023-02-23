@@ -6,13 +6,14 @@ import gamma from '../../public/gamma.jpg'
 import deepscan from '../../public/deepscan.png'
 import leanboard from '../../public/leanboard.jpg'
 import ocd from '../../public/ocd.jpg'
+import success from '../../public/success.png'
 
 const index = () => {
   return (
-    <div className='bg-[#10182F] max-w-7xl mx-auto p-32 flex items-center'>
-            <div className='bg-white rounded-md max-w-full mx-auto p-24'>
+    <div className='bg-[#10182F] max-w-full mx-auto p-32 flex items-center'>
+            <div className='bg-white rounded-md p-24'>
             <div className='text-center mb-10'>
-                <h1 className='text-lg font-bold'>Recently added</h1>
+                <h1 className='text-base font-bold mb-2'>Recently added</h1>
                 <p className='text-sm'>The latest tools that help you and your team
                     building software better,together.
                 </p>
@@ -22,14 +23,19 @@ const index = () => {
                     <div className='bg-gray-200 rounded-full p-5 shrink-0'>
                     <Image src={instabug} alt='instabug' className='w-12 h-12'/>
                     </div>
-                   
                     <div>     
-                    <h2 className='text-base font-semibold'>Instabug</h2>
+                    <h2 className='text-base font-semibold'>Instabug</h2>  
+                    </div>  
+                    <Image src={success} alt='success' className='w-6 h-6'/> 
+                    <div className='inline'>
                     <p className='text-sm'>The top apps in the world rely on instabug for bug
                         reporting, crash reporting, and in-app user 
                         feedback.
                     </p>
-                    </div>  
+
+                    </div>
+                   
+                   
                 </div>
 
                 <div className='flex items-center space-x-6'>

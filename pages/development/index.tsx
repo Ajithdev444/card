@@ -1,21 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
-import img2 from '../../public/img2.jpg'
+import de from '../../public/de.jpeg'
 
 const Development = () => {
   return (
-    <div className='relative bg-[#E9ECF1] h-screen flex items-end max-w-6xl mx-auto'>
-        <div className='w-2/3 h-3/5 bg-[#151D4B] absolute mt-72'>
-
-        </div>
-        <div className='h-[768px] border mx-40 my-56 absolute bg-[#FFF] flex  rounded-xl'>
-            <div className='py-32 px-28 col-span-2 w-3/4'>
+    <div className='relative bg-gray-300 flex items-center p-40 max-w-full mx-auto'>
+        <div className='bg-[#FFF] rounded-2xl p-24 flex flex-row'>
+            <div className='w-3/4'>
             <div className='mb-4'>
             <h1 className='text-base font-semibold text-[#272A3D]'>Development</h1>
             <h2 className='text-lg font-bold text-[#323248] font-serif'>Compatible Inkjet Cartridge</h2>
             </div>
             <div>
-                <Image src={img2} alt='development' className='w-full h-44 object-cover rounded-md'/>
+                <Image src={de} alt='development' className='w-full h-56 object-cover rounded-md'/>
             </div>
             <div className='grid grid-cols-3 w-full py-6 gap-8'>
                 <div>
@@ -42,12 +39,12 @@ const Development = () => {
                     Read more</button>
             </div>
             </div>
-            <div className='bg-[#151D4B] w-1/5 h-1/2 my-48 mx-[-80px] rounded-md shadow-2xl'>
-                <div className='p-8'>
+            <div className='bg-[#151D4B] rounded-md w-1/4 m-16 p-8 shadow-2xl'>
+                <div className=''>
                 <h2 className='text-base font-bold text-white font-serif'>Party Jokes Starting But Unnecessary</h2>
-                <p className='text-sm text-white'>Life is a journey of twists and turns,peaks and
+                <p className='text-sm text-white 2xl:mt-6'>Life is a journey of twists and turns,peaks and
                         valleys, mountains to climb and oceans to explore.</p>
-                 <button className='px-4 py-2 border-[1px] border-[#000] rounded-md font-semibold text-sm bg-white mt-6'>
+                 <button className='px-4 py-2 border-[1px] border-[#000] rounded-md font-semibold text-sm bg-white mt-12'>
                     Read more</button>       
             </div>
             </div>
