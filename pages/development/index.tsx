@@ -4,7 +4,7 @@ import img2 from '../../public/img2.jpg'
 
 const Development = () => {
   return (
-    <div className='relative bg-[#E9ECF1] h-screen flex items-end'>
+    <div className='relative bg-[#E9ECF1] h-screen flex p-6 items-end max-w-6xl mx-auto'>
         <div className='w-2/3 h-3/5 bg-[#151D4B] absolute mt-72'>
 
         </div>
@@ -42,7 +42,7 @@ const Development = () => {
                     Read more</button>
             </div>
             </div>
-            <div className='bg-[#151D4B] w-1/5 h-60 my-52 mx-[-80px] rounded-md'>
+            <div className='bg-[#151D4B] w-1/5 h-60 my-52 mx-[-80px] rounded-md shadow-2xl'>
                 <div className='p-8'>
                 <h2 className='text-base font-bold text-white font-serif'>Party Jokes Starting But Unnecessary</h2>
                 <p className='text-sm text-white'>Life is a journey of twists and turns,peaks and
