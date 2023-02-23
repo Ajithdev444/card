@@ -2,8 +2,8 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <div className='bg-[#F4F9FF] grid h-screen'>
-        <div className='bg-white p-10 w-80 h-auto text-center m-auto'>
+    <div className='bg-[#F4F9FF] flex items-center p-32 max-w[7xl] mx-auto'>
+        <div className='bg-white p-12 w-80 h-auto text-center mx-auto'>
   
           <div>
             <h1 className='text-xl font-bold mb-3'>Join the<br/>community</h1>
@@ -22,7 +22,7 @@ const Form = () => {
             <button  className='bg-[#1D2C4B] text-xs font-semibold w-full text-white px-8 py-2 rounded-md'>Create New Account</button>
           </div>
           <div>
-            <p className='text-[8px] p-3'>By joining, you agree to our Terms of<br/>
+            <p className='text-xs p-3'>By joining, you agree to our Terms of<br/>
              Service and Privacy Policy</p>
           </div>
           </div>
