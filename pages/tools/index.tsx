@@ -11,7 +11,7 @@ const index = () => {
   return (
     <div className='bg-[#10182F] max-w-7xl mx-auto p-32 flex items-center'>
             <div className='bg-white rounded-md max-w-full mx-auto p-24'>
-            <div className='text-center'>
+            <div className='text-center mb-10'>
                 <h1 className='text-lg font-bold'>Recently added</h1>
                 <p className='text-sm'>The latest tools that help you and your team
                     building software better,together.
@@ -104,8 +104,8 @@ const index = () => {
                 </div>
 
             </div>
-            <div className='text-center'>
-                <button className='px-6 py-2 mb-4 bg-black text-white text-xs font-semibold hover:text-black hover:bg-white'>View all</button>
+            <div className='text-center mt-10'>
+                <button className='px-6 py-2 bg-black text-white text-xs font-semibold hover:text-black hover:bg-white'>View all</button>
             </div>
         </div>
     </div>
