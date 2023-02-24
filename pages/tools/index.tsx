@@ -10,8 +10,8 @@ import success from '../../public/success.png'
 
 const index = () => {
   return (
-    <div className='bg-[#10182F] max-w-full mx-auto p-36 flex items-center'>
-            <div className='bg-white rounded-md p-20'>
+    <div className='bg-[#10182F] min-h-screen flex items-center p-20 justify-center'>
+            <div className='bg-white rounded-md p-28 max-w-7xl '>
             <div className='text-center mb-10'>
                 <h1 className='text-xl font-bold mb-3'>Recently added</h1>
                 <p className='text-sm font-medium'>The latest tools that help you and your team
