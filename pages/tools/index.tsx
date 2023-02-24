@@ -18,24 +18,18 @@ const index = () => {
                     building software better,together.
                 </p>
             </div>
-            <div className='grid grid-cols-2 space-y-10 space-x-10'>
-                <div className='flex items-center space-x-6'>
+            <div className='grid grid-cols-2 gap-20 '>
+                <div className='flex items-center gap-8'>
                     <div className='bg-gray-200 rounded-full p-5 shrink-0'>
-                    <Image src={instabug} alt='instabug' className='w-12 h-12'/>
+                    <Image src={instabug} alt='instabug' className='w-12 h-12 rounded-full'/>
                     </div>
                     <div>     
-                    <h2 className='text-base font-semibold'>Instabug</h2>  
-                    </div>  
-                    <Image src={success} alt='success' className='w-6 h-6'/> 
-                    <div className='inline'>
+                    <h2 className='text-base font-semibold mb-2'>Instabug</h2> 
                     <p className='text-sm'>The top apps in the world rely on instabug for bug
                         reporting, crash reporting, and in-app user 
                         feedback.
-                    </p>
-
-                    </div>
-                   
-                   
+                    </p>  
+                    </div>      
                 </div>
 
                 <div className='flex items-center space-x-6'>
@@ -44,7 +38,7 @@ const index = () => {
                     </div>
                    
                     <div>
-                    <h2 className='text-base font-semibold'>DeepScan</h2>
+                    <h2 className='text-base font-semibold mb-2'>DeepScan</h2>
                     <p className='text-sm'>DeepScan is an advanced static analysis tools
                         engineered to support JavaScript, TypeSCRIPT,
                         React, and Vue.js.
@@ -58,7 +52,7 @@ const index = () => {
                     </div>
                    
                     <div>
-                    <h2 className='text-base font-semibold'>Octobox</h2>
+                    <h2 className='text-base font-semibold mb-2'>Octobox</h2>
                     <p className='text-sm'>Octobox helps you manage your notifications in 
                         the same way Gmail helps you manage your 
                         email.
@@ -73,7 +67,7 @@ const index = () => {
                     </div>
                     
                     <div>
-                    <h2 className='text-base font-semibold'>LeanBoard</h2>
+                    <h2 className='text-base font-semibold mb-2'>LeanBoard</h2>
                     <p className='text-sm'>Lean Board is a collaborative whiteboard with
                          sticky notes which seamlessly connects with your
                          GitHub issue.</p>
@@ -86,7 +80,7 @@ const index = () => {
                     </div>
                    
                     <div>
-                    <h2 className='text-base font-semibold'>Gamma Data Leak Prevention</h2>
+                    <h2 className='text-base font-semibold mb-2'>Gamma Data Leak Prevention</h2>
                     <p className='text-sm'>69% of data branches start with negligence. one
                         negligent employee could cost your company a 
                         decade worth of reputataion.
@@ -101,7 +95,7 @@ const index = () => {
                     <Image src={ocd} alt='ocd' className='w-10 h-10 rounded-full'/>
                     </div>
                     <div>
-                    <h2 className='text-base font-semibold'>ODIN</h2>
+                    <h2 className='text-base font-extrabold mb-2'>ODIN</h2>
                     <p className='text-sm'>The top apps in the world relay on Instabug for bug
                         reporting, crash reporting, and in-app user 
                         feedback.
@@ -111,7 +105,7 @@ const index = () => {
 
             </div>
             <div className='text-center mt-10'>
-                <button className='px-6 py-2 bg-black text-white text-xs font-semibold hover:text-black hover:bg-white'>View all</button>
+                <button className='px-8 py-4 bg-black text-white text-xs font-semibold'>View all</button>
             </div>
         </div>
     </div>
