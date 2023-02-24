@@ -9,7 +9,7 @@ const Development = () => {
             <div className='w-3/4'>
             <div className='mb-4'>
             <h1 className='text-base font-semibold text-[#272A3D]'>Development</h1>
-            <h2 className='text-lg font-bold text-[#323248] font-serif'>Compatible Inkjet Cartridge</h2>
+            <h2 className='text-xl font-bold text-[#323248] font-serif'>Compatible Inkjet Cartridge</h2>
             </div>
             <div>
                 <Image src={de} alt='development' className='w-full h-56 object-cover rounded-md'/>
@@ -39,7 +39,7 @@ const Development = () => {
                     Read more</button>
             </div>
             </div>
-            <div className='bg-[#151D4B] rounded-md w-1/4 m-16 p-8 shadow-2xl'>
+            <div className='bg-[#151D4B] rounded-md w-1/4 shadow-2xl mx-12 my-16 p-8'>
                 <div className=''>
                 <h2 className='text-base font-bold text-white font-serif'>Party Jokes Starting But Unnecessary</h2>
                 <p className='text-sm text-white 2xl:mt-6'>Life is a journey of twists and turns,peaks and
@@ -47,11 +47,8 @@ const Development = () => {
                  <button className='px-4 py-2 border-[1px] border-[#000] rounded-md font-semibold text-sm bg-white mt-12'>
                     Read more</button>       
             </div>
-            </div>
-         
-            
+            </div> 
         </div>
-  
     </div>
   )
 }

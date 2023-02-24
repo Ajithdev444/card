@@ -23,8 +23,12 @@ const index = () => {
                     <div className='bg-gray-200 rounded-full p-5 shrink-0'>
                     <Image src={instabug} alt='instabug' className='w-12 h-12 rounded-full'/>
                     </div>
-                    <div>     
-                    <h2 className='text-base font-semibold mb-2'>Instabug</h2> 
+                    <div> 
+                    <span className='inline-flex items-center'>
+                    <span className='text-base font-semibold mb-2'>Instabug</span> 
+                    <Image src={success} alt='success' className='w-6 h-6 ml-2'/>
+                    </span>    
+                   
                     <p className='text-sm'>The top apps in the world rely on instabug for bug
                         reporting, crash reporting, and in-app user 
                         feedback.
@@ -38,7 +42,10 @@ const index = () => {
                     </div>
                    
                     <div>
-                    <h2 className='text-base font-semibold mb-2'>DeepScan</h2>
+                    <span className='inline-flex items-center'>
+                    <span className='text-base font-semibold mb-2'>DeepScan</span> 
+                    <Image src={success} alt='success' className='w-6 h-6 ml-2'/>
+                    </span>   
                     <p className='text-sm'>DeepScan is an advanced static analysis tools
                         engineered to support JavaScript, TypeSCRIPT,
                         React, and Vue.js.
@@ -52,7 +59,10 @@ const index = () => {
                     </div>
                    
                     <div>
-                    <h2 className='text-base font-semibold mb-2'>Octobox</h2>
+                    <span className='inline-flex items-center'>
+                    <span className='text-base font-semibold mb-2'>Octobox</span> 
+                    <Image src={success} alt='success' className='w-6 h-6 ml-2'/>
+                    </span>   
                     <p className='text-sm'>Octobox helps you manage your notifications in 
                         the same way Gmail helps you manage your 
                         email.
@@ -67,7 +77,10 @@ const index = () => {
                     </div>
                     
                     <div>
-                    <h2 className='text-base font-semibold mb-2'>LeanBoard</h2>
+                    <span className='inline-flex items-center'>
+                    <span className='text-base font-semibold mb-2'>LeanBoard</span> 
+                    <Image src={success} alt='success' className='w-6 h-6 ml-2'/>
+                    </span>   
                     <p className='text-sm'>Lean Board is a collaborative whiteboard with
                          sticky notes which seamlessly connects with your
                          GitHub issue.</p>
@@ -80,7 +93,10 @@ const index = () => {
                     </div>
                    
                     <div>
-                    <h2 className='text-base font-semibold mb-2'>Gamma Data Leak Prevention</h2>
+                    <span className='inline-flex items-center'>
+                    <span className='text-base font-semibold mb-2'>Gamma Data Leak Prevention</span> 
+                    <Image src={success} alt='success' className='w-6 h-6 ml-2'/>
+                    </span>   
                     <p className='text-sm'>69% of data branches start with negligence. one
                         negligent employee could cost your company a 
                         decade worth of reputataion.
@@ -95,7 +111,11 @@ const index = () => {
                     <Image src={ocd} alt='ocd' className='w-10 h-10 rounded-full'/>
                     </div>
                     <div>
-                    <h2 className='text-base font-extrabold mb-2'>ODIN</h2>
+                    <span className='inline-flex items-center'>
+                    <span className='text-base font-semibold mb-2'>ODIN</span> 
+                    <Image src={success} alt='success' className='w-6 h-6 ml-2'/>
+                    </span>   
+        
                     <p className='text-sm'>The top apps in the world relay on Instabug for bug
                         reporting, crash reporting, and in-app user 
                         feedback.
