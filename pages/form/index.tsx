@@ -11,7 +11,7 @@ const Form = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
    
-    <div className='bg-[#F4F9FF] flex items-center p-32 max-w[7xl] mx-auto'>
+    <div className='bg-[#F4F9FF] flex items-center max-w[7xl] min-h-screen'>
         <div className='bg-white p-12 w-80 h-auto text-center mx-auto'>
   
           <div>
