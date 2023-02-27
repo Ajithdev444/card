@@ -23,7 +23,7 @@ const index = () => {
                 <Image src={movie} alt='movie' className='w-60 h-96'/>
                 <div className='ml-10'>
                 <h2 className='text-xl font-bold mb-2'>About the Movie</h2>
-                <p className='text-lg'>In Lucasfilm's Star Wars: The Last jedi, the Skywalker saga
+                <p className='text-lg'>In Lucasfilm s Star Wars: The Last jedi, the Skywalker saga
                     continues as the heros of The Force Awakens join the galactic
                     legands in an epic adventure that unlocks new mysteries of the
                     Force and shocking revelations of the past.
