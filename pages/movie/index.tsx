@@ -9,8 +9,13 @@ const index = () => {
         <div className='max-w-5xl bg-[#FFF] p-20 shadow-2xl'>
             <div className='grid justify-items-stretch mb-4'>
                 <h1 className='text-2xl font-bold'>Star Wars: The Last Jedi</h1>
-                <span className='justify-self-end text-blue-700 font-bold'>7.4<span className='text-gray-400 font-normal'> / 10</span></span>
+                <div className='inline'>
                 <Link href="#" className='text-blue-700'>Action & Adventure</Link>
+                <span className='text-blue-700 font-bold flex justify-end'>7.4<span className='text-gray-400 font-normal'> / 10</span></span>
+               
+               
+
+                </div>
                
             </div>
 
