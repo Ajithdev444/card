@@ -5,11 +5,11 @@ import movie from '../../public/movie.jpg'
 
 const index = () => {
   return (
-    <div className='min-h-screen bg-gray-300 flex justify-center items-center p-10'>
+    <div className='min-h-screen bg-[#F6F8FC] flex justify-center items-center p-20'>
         <div className='max-w-5xl bg-[#FFF] p-20'>
             <div>
                 <h1 className='text-2xl font-bold'>Star Wars:The Last Jedi</h1>
-                <Link href="/movies" className='text-[#3A6BA7] text-lg'>Action & Adventure</Link>
+                <Link href="/movies" className='text-[#6477A9] text-lg'>Action & Adventure</Link>
                 <div>7.4/10</div>
             </div>
 
@@ -60,11 +60,10 @@ const index = () => {
             <div>
             </div>
 
-            <div className='flex'>
+            <div className='grid grid-cols-3 mt-6'>
                 <div className='text-xl font-bold'>$19.00</div>
-                <button className='text-xl font-bold ml-28'>Buy</button>
-                <button className='text-xl font-bold place-items-end'>WATCH TRAILER</button>
-                
+                <button className='text-sm rounded-full border-[2px] border-black px-2 font-bold'>BUY</button>
+                <button className='text-sm rounded-full place-items-end bg-black text-white place-content-end'>WATCH TRAILER</button> 
             </div>
 
         </div>
