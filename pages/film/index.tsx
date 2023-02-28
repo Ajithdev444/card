@@ -18,7 +18,7 @@ const index = () => {
                 <Image src={movie} alt='movie' className='object-cover'/>
                 </div>
                
-                <div className='ml-10 w-2/3'>
+                <div className='ml-10 w-2/3 max-w-4xl'>
                 <h2 className='text-xl font-bold mb-2'>About the Movie</h2>
                 <p className='text-lg'>In Lucasfilm s Star Wars: The Last jedi, the Skywalker saga
                     continues as the heros of The Force Awakens join the galactic
@@ -65,12 +65,12 @@ const index = () => {
 
             <div className='flex mt-6'>
                 <div className='w-1/3'>
-                <div className='text-xl font-bold'>$19.00</div>
+                <span className='text-xl font-bold'>$19.00</span>
                 <button className='text-sm rounded-full border-[2px] border-black px-6 py-1 font-bold ml-20'>BUY</button>
                 </div>
                
-                <div className='w-2/3'>
-                  <button className='text-sm rounded-full bg-black px-6 py-1 text-white'>WATCH TRAILER</button>
+                <div className='w-2/3 flex shrink '>
+                  <button className='mx-auto text-sm rounded-full bg-black px-6 py-1 text-white'>WATCH TRAILER</button>
                 </div>
                 
             </div>
