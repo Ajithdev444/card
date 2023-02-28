@@ -7,21 +7,18 @@ const index = () => {
   return (
     <div className='min-h-screen bg-[#F6F8FC] flex justify-center items-center p-20'>
         <div className='max-w-5xl bg-[#FFF] p-20 shadow-2xl'>
-            <div className='grid justify-items-stretch mb-4'>
+            <div className='relative mb-4'>
                 <h1 className='text-2xl font-bold'>Star Wars: The Last Jedi</h1>
-                <div className='inline'>
-                <Link href="#" className='text-blue-700'>Action & Adventure</Link>
-                <span className='text-blue-700 font-bold flex justify-end'>7.4<span className='text-gray-400 font-normal'> / 10</span></span>
-               
-               
-
-                </div>
-               
+                <Link href="#" className=' text-[#4A80E9]'>Action & Adventure</Link>
+                <div className='absolute text-[#4A80E9] font-bold right-0 top-0 bottom-0 flex items-center'>7.4<span className='text-gray-400 font-normal'> / 10</span></div>
             </div>
 
             <div className='flex'>
-                <Image src={movie} alt='movie' className='w-60 h-96'/>
-                <div className='ml-10'>
+                <div className='w-1/3' >
+                <Image src={movie} alt='movie' className='object-cover'/>
+                </div>
+               
+                <div className='ml-10 w-2/3'>
                 <h2 className='text-xl font-bold mb-2'>About the Movie</h2>
                 <p className='text-lg'>In Lucasfilm s Star Wars: The Last jedi, the Skywalker saga
                     continues as the heros of The Force Awakens join the galactic
@@ -34,28 +31,28 @@ const index = () => {
                 <div className='flex mt-10 gap-14'>
                 <div className='flex flex-col'>
                 <h2 className='text-xl font-bold pb-2'>Actors</h2> 
-                <Link className='text-md text-blue-700' href='#'>Oscar Isaac</Link>
-                <Link className='text-md text-blue-700' href='#'>Mark Hamil</Link>
-                <Link className='text-md text-blue-700' href='#'>Daisy Ridley</Link>
-                <Link className='text-md text-blue-700' href='#'>John Boyega</Link>
-                <Link className='text-md text-blue-700' href='#'>Kelly Marie Tran</Link>
+                <Link className='text-md text-[#4A80E9]' href='#'>Oscar Isaac</Link>
+                <Link className='text-md  text-[#4A80E9]' href='#'>Mark Hamil</Link>
+                <Link className='text-md  text-[#4A80E9]' href='#'>Daisy Ridley</Link>
+                <Link className='text-md  text-[#4A80E9]' href='#'>John Boyega</Link>
+                <Link className='text-md  text-[#4A80E9]' href='#'>Kelly Marie Tran</Link>
                 </div>
                 <div className=''>
                     <h2 className='text-xl font-bold pb-2'>Director</h2>
-                    <Link className='text-md text-blue-700' href='#'>Rian Johnson</Link>
+                    <Link className='text-md  text-[#4A80E9]' href='#'>Rian Johnson</Link>
                     <div className='mt-6'>
                     <h2 className='text-xl font-bold pb-2'>Screenwriter</h2>
-                    <Link className='text-md text-blue-700' href='#'>Rian Johnson</Link>
+                    <Link className='text-md text-[#4A80E9]' href='#'>Rian Johnson</Link>
                 </div>
                 </div>
                 <div className='flex flex-col'>
                     <h2 className='text-xl font-bold pb-2'>Producers</h2>
-                    <Link className='text-md text-blue-700' href='#'>Kathleen Kennedy</Link>
-                    <Link className='text-md text-blue-700' href='#'>Ram Bergman</Link>
+                    <Link className='text-md text-[#4A80E9]' href='#'>Kathleen Kennedy</Link>
+                    <Link className='text-md text-[#4A80E9]' href='#'>Ram Bergman</Link>
                 </div> 
                 </div>
                 <div className=''>
-                <button className='text-lg text-blue-700 underline font-bold pt-4'>More</button>
+                <button className='text-lg text-[#4A80E9] underline font-bold pt-4'>More</button>
                 </div>
                 </div>
                
@@ -67,9 +64,15 @@ const index = () => {
             </div>
 
             <div className='flex mt-6'>
+                <div className='w-1/3'>
                 <div className='text-xl font-bold'>$19.00</div>
                 <button className='text-sm rounded-full border-[2px] border-black px-6 py-1 font-bold ml-20'>BUY</button>
-                <button className='text-sm rounded-full bg-black px-6 py-1 text-white ml-96'>WATCH TRAILER</button> 
+                </div>
+               
+                <div className='w-2/3'>
+                  <button className='text-sm rounded-full bg-black px-6 py-1 text-white'>WATCH TRAILER</button>
+                </div>
+                
             </div>
         </div>
     </div>
