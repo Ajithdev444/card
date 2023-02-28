@@ -11,7 +11,7 @@ import img2 from '../../public/img2.jpg'
 const index = () => {
   return (
     
-        <div className='min-h-screen p-10 bg-purple-200'>
+        <div className='min-h-screen p-10 bg-[#C1C0BC]'>
           <div className='gap-4 grid grid-cols-8 bg-white grid-rows-5 grid-flow-row'>
           <Image src={img1} alt='de' className='col-span-1 w-full h-32 object-cover'/>
           <Image src={google} alt='de' className='col-span-2 w-full h-32 object-cover'/>
