@@ -15,7 +15,7 @@ const index = () => {
 
             <div className='flex'>
                 <div className='w-1/3' >
-                <Image src={movie} alt='movie' className='object-cover'/>
+                <Image src={movie} alt='movie' className='object-cover h-full'/>
                 </div>
                
                 <div className='ml-10 w-2/3 max-w-4xl'>
@@ -56,21 +56,18 @@ const index = () => {
                 </div>
                 </div>
                
-                
-                
-
             </div>
             <div>
             </div>
 
             <div className='flex mt-6'>
-                <div className='w-1/3'>
+                <div className='w-1/3 relative'>
                 <span className='text-xl font-bold'>$19.00</span>
-                <button className='text-sm rounded-full border-[2px] border-black px-6 py-1 font-bold ml-20'>BUY</button>
+                <button className='text-sm rounded-full border-[2px] absolute border-black px-6 py-1 font-bold right-0'>BUY</button>
                 </div>
                
-                <div className='w-2/3 flex shrink '>
-                  <button className='mx-auto text-sm rounded-full bg-black px-6 py-1 text-white'>WATCH TRAILER</button>
+                <div className='w-2/3 shrink relative '>
+                  <button className='absolute right-0 text-sm rounded-full bg-black px-6 py-1 text-white'>WATCH TRAILER</button>
                 </div>
                 
             </div>
