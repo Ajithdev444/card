@@ -26,8 +26,8 @@ const index = () => {
                 <div className='flex'>
                 <div className='pr-40'>
                     <h1 className='text-xl font-bold'>Joan Doe</h1>
-                    <h3 className='text-gray-400'>Photography</h3>
-                    <Link href='#' className='text-gray-400'>Timisora, RO</Link>
+                    <h3 className='text-gray-400 text-xs'>Photography</h3>
+                    <Link href='#' className='text-gray-400 text-xs'>Timisora, RO</Link>
                 </div>
                 <div className='flex gap-x-10 pr-16'>
                     <div>
@@ -50,11 +50,11 @@ const index = () => {
                 <div className='flex mt-4'>
                 <div className=' max-w-2xl'>
                 <h2 className='mb-4 text-xl font-bold'>About me</h2>
-                <p className='text-gray-400'>Dolor sit amet,utamur efficiantur ius cu, ludus eligendi adipisci
+                <p className='text-gray-400 text-xs'>Dolor sit amet,utamur efficiantur ius cu, ludus eligendi adipisci
                     ex usu, per ne putent regione philosophia, Saperet civibus
                     quaerendum usu ex, ut alii habeo utroque qui.
                 </p>
-                <p className='text-gray-400'>Et inermis quaestio elaboraret pro.Habeo corrumpit assueverit
+                <p className='text-gray-400 text-xs mt-5'>Et inermis quaestio elaboraret pro.Habeo corrumpit assueverit
                     per at. Justo ad has, solet definitiones ad mel.
                 </p>
                 
@@ -72,7 +72,7 @@ const index = () => {
             </div>
             
             <div>
-                <h2 className='text-xl font-bold'>Pictures</h2>
+                <h2 className='text-xl font-bold mt-4 mb-2'>Pictures</h2>
             </div>
             <div className='gap-4 grid-cols-1 grid md:grid-cols-4 bg-white md:grid-rows-2 max-h-96 grid-flow-row-dense max-w-5xl '>
                 <Image src={bike} alt='bike' className='col-span-1 row-span-1 object-cover h-full'/>
