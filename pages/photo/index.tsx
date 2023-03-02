@@ -74,7 +74,7 @@ const index = () => {
             <div>
                 <h2 className='text-xl font-bold'>Pictures</h2>
             </div>
-            <div className='gap-4 grid-cols-1 grid md:grid-cols-4 bg-white md:grid-rows-2 min-h-full grid-flow-row-dense p-4 max-w-5xl '>
+            <div className='gap-4 grid-cols-1 grid md:grid-cols-4 bg-white md:grid-rows-2 min-h-full grid-flow-row-dense max-w-5xl '>
                 <Image src={bike} alt='bike' className='col-span-1 row-span-1 object-cover h-full'/>
                 <Image src={langosta} alt='langosta' className='col-span-1 row-span-1 w-full object-cover h-full'/>
                 <Image src={female} alt='female' className='col-span-1 object-cover h-full'/>
