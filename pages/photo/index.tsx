@@ -17,7 +17,10 @@ import man from '../../public/man.jpg'
 const index = () => {
   return (
     <div className='min-h-screen bg-[#1C2333] mx-auto flex items-center justify-center p-40'>
+        
         <div className='bg-white max-w-5xl max-h-screen p-10'>
+        
+            
             <div className='flex'>
             <div className='w-1/4'>
                 <Image src={photo} alt='photo' className='h-full object-cover'/>
@@ -48,7 +51,7 @@ const index = () => {
                 </div>
                 </div>
                 <div className='flex mt-4'>
-                <div className=' max-w-2xl'>
+                <div className=' max-w-sm'>
                 <h2 className='mb-4 text-xl font-bold'>About me</h2>
                 <p className='text-gray-400 text-xs'>Dolor sit amet,utamur efficiantur ius cu, ludus eligendi adipisci
                     ex usu, per ne putent regione philosophia, Saperet civibus
@@ -59,17 +62,51 @@ const index = () => {
                 </p>
                 
                 </div>
-                <div>
+                <div className='px-20'>
                     <h2 className='mb-4 text-xl font-bold'>Skills</h2>
-                    <h3>Equipment</h3>
-                    <h3>Editing</h3>
-                    <h3>Marketing</h3>
-                    <h3>Retouching</h3>
-                </div>  
-                </div>
-           </div>
+                    <div className='relative'>
+                    <h3 className='text-xs text-gray-600 leading-6'>Equipment</h3>
+                    <div className='w-14 h-1 bg-black absolute bottom-0'></div>
+                    <div className='rounded-full bg-black absolute w-3 h-3 right-4 top-5'></div>
+                    <div className='w-20 h-1 bg-gray-300 '></div>
 
+                    </div>
+
+                    <div className='relative'>
+                    <h3 className='text-xs text-gray-600 leading-6'>Editing</h3>
+                    <div className='w-14 h-1 bg-black absolute bottom-0'></div>
+                    <div className='rounded-full bg-black absolute w-3 h-3 right-4 top-5'></div>
+                    <div className='w-20 h-1 bg-gray-300 '></div>
+
+                    </div>
+                    <div className='relative'>
+                    <h3 className='text-xs text-gray-600 leading-6'>Marketing</h3>
+                    <div className='w-10 h-1 bg-black absolute bottom-0'></div>
+                    <div className='rounded-full bg-black absolute w-3 h-3 right-7 top-5'></div>
+                    <div className='w-20 h-1 bg-gray-300 '></div>
+
+                    </div>
+                    <div className='relative'>
+                    <h3 className='text-xs text-gray-600 leading-6'>Retouching</h3>
+                    <div className='w-8 h-1 bg-black absolute bottom-0'></div>
+                    <div className='rounded-full bg-black absolute w-3 h-3 right-9 top-5'></div>
+                    <div className='w-20 h-1 bg-gray-300 '></div>
+
+                    </div>
+
+                    
+                    
+                </div> 
+                 
+                </div>
+                
+                
+           </div>
+           
+          
             </div>
+
+            
             
             <div>
                 <h2 className='text-xl font-bold mt-4 mb-2'>Pictures</h2>
@@ -87,14 +124,21 @@ const index = () => {
                 <Image src={man} alt='man' className='col-span-1 object-cover h-full'/>
             </div>
             <div className='flex justify-end'>
-                <button className='px-4 py-2 bg-gray-300 font-bold'>Load more</button>
+                <button className='px-4 py-2 bg-gray-200 text-sm mt-3'>Load more</button>
             </div>
             
 
            
         </div>
+        <div className='relative'>
+                    <div className='w-16 h-72 bg-gray-400 absolute -top-[442px] left-full right-0'></div>
+                </div>
+       
+
         
     </div>
+    
+    
   )
 }
 
