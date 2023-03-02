@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import movie from '../../public/movie.jpg'
 
+
 const index = () => {
   return (
     <div className='min-h-screen bg-[#F6F8FC] flex justify-center items-center p-20'>
@@ -25,9 +26,7 @@ const index = () => {
                     legands in an epic adventure that unlocks new mysteries of the
                     Force and shocking revelations of the past.
                 </p>   
-                <div>
-
-                </div>
+              
                 <div className='flex mt-10 gap-14'>
                 <div className='flex flex-col'>
                 <h2 className='text-xl font-bold pb-2'>Actors</h2> 
