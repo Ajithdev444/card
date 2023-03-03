@@ -12,7 +12,7 @@ import girl from '../../public/girl.jpeg'
 import kid from '../../public/kid.png'
 import coffe from '../../public/coffe.png'
 import female from '../../public/female.jpg'
-import man from '../../public/man.jpg'
+import man from '../../public/man1.jpg'
 
 const index = () => {
   return (
