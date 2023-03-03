@@ -16,22 +16,25 @@ import man from '../../public/man.jpg'
 
 const index = () => {
   return (
-    <div className='min-h-screen bg-[#1C2333] mx-auto flex items-center justify-center p-40'>
-        
-        <div className='bg-white max-w-5xl max-h-screen p-10'>
-        
-            
-            <div className='flex'>
-            <div className='w-1/4'>
-                <Image src={photo} alt='photo' className='h-full object-cover'/>
+    <div className='min-h-screen bg-[#1C2333] flex justify-center p-20'>
+
+       <div className='bg-white max-w-5xl'>
+        <div className='relative'>
+                    <div className='w-16 h-72 bg-gray-400 absolute left-full top-0 right-0'></div>
+        </div> 
+            <div className='flex p-12'>
+            <div className='w-1/4 relative'>
+                <Image src={photo} alt='photo' className='h-full object-cover absolute'/>
             </div>
             <div className='flex flex-col w-3/4 p-10'>
                 <div className='flex'>
-                <div className='pr-40'>
+                <div className='pr-32'>
                     <h1 className='text-xl font-bold'>Joan Doe</h1>
+                    
                     <h3 className='text-gray-400 text-xs'>Photography</h3>
                     <Link href='#' className='text-gray-400 text-xs'>Timisora, RO</Link>
                 </div>
+                <div className='w-0.5 h-full bg-gray-200'></div>
                 <div className='flex gap-x-10 pr-16'>
                     <div>
                         <Image src={gallery} alt='gallery' className='w-10 h-10'/>
@@ -46,10 +49,13 @@ const index = () => {
                         <div  className='text-lg font-bold'>470</div>
                     </div>
                 </div>
-                <div className=''>
+                <div className='w-0.5 h-full bg-gray-200'></div>  
+                <div className='justify-end'>
                     <button className='px-8 py-2 bg-[#FBB800] text-white'>Follow</button>
                 </div>
+                
                 </div>
+                <div className='h-0.5 bg-gray-200'></div>
                 <div className='flex mt-4'>
                 <div className=' max-w-sm'>
                 <h2 className='mb-4 text-xl font-bold'>About me</h2>
@@ -91,55 +97,81 @@ const index = () => {
                     <div className='w-8 h-1 bg-black absolute bottom-0'></div>
                     <div className='rounded-full bg-black absolute w-3 h-3 right-9 top-5'></div>
                     <div className='w-20 h-1 bg-gray-300 '></div>
-
-                    </div>
-
-                    
-                    
+                    </div>  
                 </div> 
-                 
                 </div>
-                
-                
            </div>
-           
-          
-            </div>
-
+            </div>            
             
-            
-            <div>
-                <h2 className='text-xl font-bold mt-4 mb-2'>Pictures</h2>
+            <div className='ml-12'>
+                <h2 className='text-xl font-bold'>Pictures</h2>
             </div>
-            <div className='gap-4 grid-cols-1 grid md:grid-cols-4 bg-white md:grid-rows-2 max-h-96 grid-flow-row-dense max-w-5xl '>
+            <div className='gap-4 grid-cols-1 grid md:grid-cols-4 bg-white md:grid-rows-2 grid-flow-row-dense p-12 '>
+                <div className='relative'>
                 <Image src={bike} alt='bike' className='col-span-1 row-span-1 object-cover h-full'/>
-                <Image src={langosta} alt='langosta' className='col-span-1 row-span-1 w-full object-cover h-full'/>
-                <Image src={female} alt='female' className='col-span-1 object-cover h-full'/>
-                <Image src={flower} alt='flower' className='col-span-1 row-span-1 object-cover h-full'/>
-               
-                <Image src={girl} alt='girl' className='col-span-1 object-cover h-full'/>
-                <Image src={kid} alt='kid' className='col-span-1 object-cover h-full'/>
-                <Image src={coffe} alt='coffe' className='col-span-1 object-cover h-full'/>
-                
-                <Image src={man} alt='man' className='col-span-1 object-cover h-full'/>
-            </div>
-            <div className='flex justify-end'>
-                <button className='px-4 py-2 bg-gray-200 text-sm mt-3'>Load more</button>
-            </div>
-            
-
-           
-        </div>
-        <div className='relative'>
-                    <div className='w-16 h-72 bg-gray-400 absolute -top-[442px] left-full right-0'></div>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️12 Likes</div>
                 </div>
-       
+                </div>
 
-        
+                <div className='relative'>
+                <Image src={langosta} alt='langosta' className='col-span-1 row-span-1 w-full object-cover h-full'/>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️9 Likes</div>
+                </div>
+                </div>
+
+                <div className='relative'>
+                <Image src={female} alt='female' className='col-span-1 object-cover h-full'/>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️43 Likes</div>
+                </div>
+                </div>
+
+                <div className='relative'>
+                <Image src={flower} alt='flower' className='col-span-1 row-span-1 object-cover h-full'/>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️24 Likes</div>
+                </div>
+                </div>
+
+                <div className='relative'>
+                <Image src={girl} alt='girl' className='col-span-1 object-cover h-full'/>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️62 Likes</div>
+                </div>
+                </div>
+
+                <div className='relative'>
+                <Image src={kid} alt='kid' className='col-span-1 object-cover h-full'/>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️78 Likes</div>
+                </div>
+                </div>
+               
+                <div className='relative'>
+                <Image src={coffe} alt='coffe' className='col-span-1 object-cover h-full'/>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️36 Likes</div>
+                </div>
+                </div>
+
+                <div className='relative'>
+                <Image src={man} alt='man' className='col-span-1 object-cover h-full'/>
+                <div className='relative bg-black'>
+                <div className='absolute left-0 bg-black bottom-0 text-white p-2 '>❤️98 Likes</div>
+                </div>
+                </div>
+                
+                
+            </div>
+            <div className='flex justify-end mr-4'>
+                <button className='px-4 py-2 bg-gray-200 text-sm'>Load more</button>
+            </div> 
+     
+        </div>
+               
     </div>
-    
-    
   )
 }
-
 export default index
