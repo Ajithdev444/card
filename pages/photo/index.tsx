@@ -13,6 +13,11 @@ import kid from '../../public/kid.png'
 import coffe from '../../public/coffe.png'
 import female from '../../public/female.jpg'
 import man from '../../public/man1.jpg'
+import share from '../../public/share.png'
+import pencil from '../../public/pencil.png'
+import alarm from '../../public/alarm.png'
+import dots from '../../public/dots.png'
+
 
 const index = () => {
   return (
@@ -20,7 +25,12 @@ const index = () => {
 
        <div className='bg-white max-w-5xl'>
         <div className='relative'>
-                    <div className='w-16 h-72 bg-gray-400 absolute left-full top-0 right-0'></div>
+                    <div className='w-16 h-80 bg-gray-400 absolute left-full top-0 right-0'>
+                        <Image src={dots} alt='dots' className='w-10 h-10 mb-10 mt-10 ml-2'/>
+                        <Image src={alarm} alt='alarm' className='w-6 h-6 mb-10 ml-4'/>
+                        <Image src={pencil} alt='pencil' className='w-6 h-6 mb-10 ml-4'/>
+                        <Image src={share} alt='share' className='w-6 h-6 mb-10 ml-4'/>
+                    </div>
         </div> 
             <div className='flex p-12'>
             <div className='w-1/4 relative'>
