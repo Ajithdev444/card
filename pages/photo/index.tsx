@@ -5,12 +5,13 @@ import Link from 'next/link'
 import gallery from '../../public/gallery.png'
 import heart from '../../public/heart.png'
 import user from '../../public/user.png'
-import man from '../../public/man1.jpg'
+
 import share from '../../public/share.png'
 import pencil from '../../public/pencil.png'
 import alarm from '../../public/alarm.png'
 import dots from '../../public/dots.png'
-import love from '../../public/love.svg'
+import GridImage from '@/components/GridImage'
+
 
 
 const index = () => {
@@ -28,7 +29,7 @@ const index = () => {
         </div> 
             <div className='flex px-12'>
             <div className='w-1/4 relative'>
-                <Image src={photo} alt='photo' className='h-full object-cover absolute'/>
+                <Image src={photo} alt='photo' className='h-full object-cover absolute -top-6'/>
             </div>
             <div className='flex flex-col w-3/4 px-10'>
                 <div className='flex border-b-2 py-4'>
@@ -54,8 +55,16 @@ const index = () => {
                     </div>
                 </div>
                   
-                <div className='flex justify-center w-full'>
-                    <button className='px-10 py-2 bg-[#FBB800] text-white'>Follow</button>
+                <div className='px-4 py-4 w-full relative'>
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 absolute left-6 top-6">
+                 <path stroke-linecap="round" stroke-linejoin="round" 
+                 d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                 </svg>
+                
+                    <button className='px-10 py-2  bg-[#FBB800] text-white'>Follow</button>
+                    
                 </div>
                 
                 </div>
@@ -117,91 +126,18 @@ const index = () => {
            </div>
             </div>            
             
-            <div className='ml-12 mt-4'>
-                <h2 className='text-xl font-bold'>Pictures</h2>
-            </div>
-            <div className='gap-4 grid-cols-1 grid md:grid-cols-7 bg-white md:grid-rows-4 grid-flow-row-dense px-12 py-2 '>
-                <div className='relative col-span-2 row-span-2 '>
-                <Image src='https://images.unsplash.com/photo-1657694421550-4884e32662a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDEwNHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60'
-                 fill alt='bike' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-2 object-cover w-4 h-4 '/>
-                <span className='absolute left-6 bottom-0 text-white'>12 Likes</span>
-                </div>
-                </div>
+          
 
-                <div className='relative col-span-3 row-span-1'>
-                <Image src='https://images.unsplash.com/photo-1581229694739-6ab0d4608254?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80'
-                fill alt='langosta' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-3 object-cover w-4 h-4 '/>
-                <div className='absolute left-6 bottom-0 text-white p-2 '>9 Likes</div>
-                </div>
-                </div>
 
-                <div className='relative col-span-2 row-span-2'>
-                <Image src='https://images.unsplash.com/photo-1621525278689-4779d647a9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDY4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'
-        
-                fill alt='female' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-2 object-cover w-4 h-4 '/>
-                <div className='absolute left-6 bottom-0 text-white p-2 '>43 Likes</div>
-                </div>
-                </div>
 
-                <div className='relative col-span-2 row-span-2'>
-                <Image src='https://images.unsplash.com/photo-1649188864561-97bae45969da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDIzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'
-                fill alt='flower' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-2 object-cover w-4 h-4 '/>
-                <div className='absolute left-6 bottom-0 text-white p-2 '>24 Likes</div>
-                </div>
-                </div>
-
-                <div className='relative col-span-1 row-span-2'>
-                <Image src='https://images.unsplash.com/photo-1627894566221-92392971a334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60'
-                 fill alt='girl' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-2 object-cover w-4 h-4'/>
-                <div className='absolute left-6 bottom-0 text-white p-2 '>62 Likes</div>
-                </div>
-                </div>
-
-                <div className='relative col-span-2 row-span-2'>
-                <Image src='https://images.unsplash.com/photo-1599862256852-8e4b9541ed7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60' 
-                fill alt='kid' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-2 object-cover w-4 h-4'/>
-                <div className='absolute left-6 bottom-0 text-white p-2 '>78 Likes</div>
-                </div>
-                </div>
-               
-                <div className='relative col-span-2 row-span-2'>
-                <Image src='https://images.unsplash.com/photo-1630040995437-80b01c5dd52d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60'
-                 fill  alt='coffe' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-2 object-cover w-4 h-4'/>
-                <div className='absolute left-6 bottom-0 text-white p-2 '>36 Likes</div>
-                </div>
-                </div>
-
-                <div className='relative col-span-3 row-span-1'>
-                <Image src={man} alt='man' className='object-cover'/>
-                <div className='bg-black'>
-                <Image src={love} alt='love' className='absolute left-2 bottom-2 object-cover w-4 h-4'/>
-                <div className='absolute left-6 bottom-0 text-white p-2 '>98 Likes</div>
-                </div>
-                </div>
-                
+        <GridImage/>
                 
             </div>
-            <div className='flex justify-end px-12 pb-4'>
-                <button className='px-4 py-2 bg-gray-200 text-sm'>Load more</button>
-            </div> 
+           
      
         </div>
                
-    </div>
+    
   )
 }
 export default index
