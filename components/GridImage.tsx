@@ -15,7 +15,7 @@ const GridImage = () => {
                  fill alt='bike' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>12 Likes</span>
+                <span className=' text-white text-xs'>12 Likes</span>
                 </div>
                 </div>
 
@@ -24,7 +24,7 @@ const GridImage = () => {
                 fill alt='langosta' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>9 Likes</span>
+                <span className=' text-white text-xs'>9 Likes</span>
                 </div>
                 </div>
 
@@ -34,7 +34,7 @@ const GridImage = () => {
                 fill alt='female' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>43 Likes</span>
+                <span className=' text-white text-xs'>43 Likes</span>
                 </div>
                 </div>
 
@@ -43,7 +43,7 @@ const GridImage = () => {
                 fill alt='flower' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>24 Likes</span>
+                <span className=' text-white text-xs'>24 Likes</span>
                 </div>
                 </div>
 
@@ -52,7 +52,7 @@ const GridImage = () => {
                  fill alt='girl' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>62 Likes</span>
+                <span className=' text-white text-xs'>62 Likes</span>
                 </div>
                 </div>
 
@@ -61,7 +61,7 @@ const GridImage = () => {
                 fill alt='kid' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>78 Likes</span>
+                <span className=' text-white text-xs'>78 Likes</span>
                 </div>
                 </div>
                
@@ -70,7 +70,7 @@ const GridImage = () => {
                  fill  alt='coffe' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>36 Likes</span>
+                <span className=' text-white text-xs'>36 Likes</span>
                 </div>
                 </div>
 
@@ -78,7 +78,7 @@ const GridImage = () => {
                 <Image src={man} alt='man' className='object-cover'/>
                 <div className='bg-black absolute left-0 bottom-0 flex justify-center items-center gap-1 p-3'>
                 <Image src={love} alt='love' className=' w-4 h-4 '/>
-                <span className=' text-white'>98 Likes</span>
+                <span className=' text-white text-xs'>98 Likes</span>
                 </div>
                 </div>
                 </div>
