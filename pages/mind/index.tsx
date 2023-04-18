@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import img from "../../public/images.jpg";
 import img1 from "../../public/images1.jpg";
@@ -14,7 +13,7 @@ const index = () => {
           We have web
           <br /> accessibility in mind
         </h1>
-        <h2 className="text-base text-[#8b8b8f] leading-6">
+        <h2 className="text-base text-gray-500 leading-6">
           Our mission is to empower organizations to make their web
           <br />
           content accessible to people with disabilities.
@@ -45,7 +44,7 @@ const index = () => {
             src={img2}
           />
         </div>
-        <div className="flex gap-2 text-blue-700">
+        <div className="flex gap-2 text-blue-800 text-xs">
           <Link href="#">Blog</Link>.<Link href="#">Newletter</Link>.
           <Link href="#">Discussion List</Link>.<Link href="#">Twitter</Link>
         </div>
