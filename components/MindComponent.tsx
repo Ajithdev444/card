@@ -13,8 +13,8 @@ const MindComponent: NextPage<Props> = (props) => {
   return (
     <div>
       <div
-        className="flex flex-col md:flex-row items-center gap-4 md:gap-8 bg-white p-5 md:p-10 rounded-md 
-      hover:scale-105 duration-300 hover:shadow-xl cursor-pointer"
+        className="flex flex-col md:flex-row gap-2 md:gap-6 bg-white p-5 md:p-10 rounded-md 
+      hover:scale-105 duration-300 hover:shadow-xl cursor-pointer items-start"
       >
         <div className="bg-gray-100 rounded-full p-2 shrink-0">
           <Image src={src} alt="img" className="w-12 h-12 rounded-full" />

@@ -19,7 +19,7 @@ const index = () => {
           <br />
           content accessible to people with disabilities.
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 py-5 md:py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6 py-5 md:py-10">
           <MindComponent
             heading2="Accessibility Training"
             para1="Whether here in Utah or on-site at your organization,WebAIM can
