@@ -45,7 +45,7 @@ const index = () => {
           />
         </div>
         <div className="flex gap-2 text-blue-800 text-xs">
-          <Link href="#">Blog</Link>.<Link href="#">Newletter</Link>.
+          <Link href="#">Blog</Link>.<Link href="#">Newsletter</Link>.
           <Link href="#">Discussion List</Link>.<Link href="#">Twitter</Link>
         </div>
       </div>
