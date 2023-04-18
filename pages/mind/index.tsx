@@ -35,7 +35,7 @@ const index = () => {
           <MindComponent
             heading2="Technical Assistance"
             para1="Need assistance implementing accessibility?WebAIM's expert staff 
-            can provide the assistance you need"
+            can provide the assistance you need."
             src={img2}
           />
           <MindComponent
