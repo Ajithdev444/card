@@ -61,8 +61,9 @@ const index = () => {
             </div>
           </div>
 
-          <div className="p-4 max-w-md">
-            <input type="checkbox" className="w-6 h-6 mr-3" />
+          <div className="p-4 flex">
+            <input type="checkbox" className="w-10 h-10 bg-slate-600 mr-3" />
+
             <label className="text-[#ABACC1]">
               Yes, I'll generously add $0.75 each month to cover the transaction
               fees.
@@ -73,7 +74,7 @@ const index = () => {
             <input
               type="text"
               placeholder="Enter your name"
-              className="p-5 bg-[#2F304F] border-2 border-[#21213B] w-full text-white text-base"
+              className="p-5 bg-[#2F304F] border-2 border-[#21213B] w-full text-white text-base rounded-md"
             />
             <div className="text-[#6672cb] pt-3">
               Click here to give in honour of other person
