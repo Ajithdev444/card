@@ -50,8 +50,10 @@ const index = () => {
             I agree
           </button>
         </div>
-        <div className="rounded-full bg-[#FF6A6B] flex justify-end w-fit p-4 mt-6">
-          <Image src={close} alt="close" className="w-8 h-8" />
+        <div className="flex justify-end">
+          <div className="rounded-full bg-[#FF6A6B]  w-fit p-4 mt-6">
+            <Image src={close} alt="close" className="w-8 h-8" />
+          </div>
         </div>
       </div>
     </div>
