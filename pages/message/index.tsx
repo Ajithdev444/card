@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import girl1 from "../../public/girl1.jpg";
-import girl2 from "../../public/girl2.jpg";
-import girl3 from "../../public/girl3.jpg";
-import close from "../../public/icons8-close.svg";
+import girl1 from "../../public/gi1.jpg";
+import girl2 from "../../public/gi2.jpg";
+import girl3 from "../../public/gi3.jpg";
+import close from "../../public/close-round-icon.svg";
 
 const index = () => {
   return (
@@ -11,17 +11,17 @@ const index = () => {
       <div className="flex flex-col max-w-screen-xl mx-auto w-96 h-auto">
         <div className="flex bg-[#FF7271] p-6 rounded-tl-md rounded-tr-md text-white relative ">
           <div className="">
-            <div className="rounded-full p-0.5 bg-gray-200 absolute z-10 left-4">
+            <div className="rounded-full p-px bg-gray-200 absolute z-10 left-4">
               <Image
                 src={girl1}
                 alt="girl1"
                 className="w-8 h-8 rounded-full "
               />
             </div>
-            <div className="rounded-full p-0.5 bg-gray-200 absolute z-0 left-12">
+            <div className="rounded-full p-px bg-gray-200 absolute z-0 left-10">
               <Image src={girl2} alt="girl1" className="w-8 h-8 rounded-full" />
             </div>
-            <div className="rounded-full p-0.5 bg-gray-200 absolute left-20">
+            <div className="rounded-full p-px bg-gray-200 absolute left-16">
               <Image src={girl3} alt="girl1" className="w-8 h-8 rounded-full" />
             </div>
           </div>
@@ -36,7 +36,7 @@ const index = () => {
           </div>
         </div>
         <div className="flex bg-[#282739] p-10 gap-4 h-80">
-          <div className="rounded-full p-0.5 bg-gray-200 shrink-0 h-fit">
+          <div className="rounded-full p-px bg-gray-200 shrink-0 h-fit">
             <Image src={girl2} alt="girl2" className="rounded-full w-8 h-8" />
           </div>
 
@@ -65,9 +65,23 @@ const index = () => {
           </button>
         </div>
         <div className="flex justify-end">
-          <div className="rounded-full bg-[#FF6A6B]  w-fit p-4 mt-6">
+          {/* <div className="rounded-full bg-[#FF6A6B]  w-fit p-4 mt-6">
             <Image src={close} alt="close" className="w-7 h-7" />
-          </div>
+          </div> */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="bg-white"
+            className="w-6 h-6 bg-[#FF6A6B]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
         </div>
       </div>
     </div>
