@@ -3,7 +3,7 @@ import React from "react";
 import girl1 from "../../public/gi1.jpg";
 import girl2 from "../../public/gi2.jpg";
 import girl3 from "../../public/gi3.jpg";
-import close from "../../public/close-round-icon.svg";
+import close from "../../public/icons8-close.svg";
 
 const index = () => {
   return (
@@ -65,23 +65,9 @@ const index = () => {
           </button>
         </div>
         <div className="flex justify-end">
-          {/* <div className="rounded-full bg-[#FF6A6B]  w-fit p-4 mt-6">
+          <div className="rounded-full bg-[#FF6A6B]  w-fit p-4 mt-6">
             <Image src={close} alt="close" className="w-7 h-7" />
-          </div> */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="bg-white"
-            className="w-6 h-6 bg-[#FF6A6B]"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          </div>
         </div>
       </div>
     </div>
