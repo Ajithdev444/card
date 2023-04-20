@@ -26,7 +26,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="ml-28 flex flex-col">
+          <div className="ml-24 flex flex-col">
             <h1 className="text-sm font-semibold text-gray-200">
               Elnora, Leila, Lucinda
             </h1>
