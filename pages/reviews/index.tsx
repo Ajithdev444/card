@@ -1,6 +1,6 @@
 import React from "react";
-import search from "../../public/search.svg";
-import upload from "../../public/upload1.png";
+import search from "../../public/search1.svg";
+import share from "../../public/share1.png";
 import Image from "next/image";
 
 const index = () => {
@@ -18,7 +18,7 @@ const index = () => {
             <input
               type="text"
               placeholder="Search reviews"
-              className="bg-[#252637] text-[#6b696d] border border-[#6b696d] px-14 py-4 text-sm w-full rounded-md"
+              className="bg-[#252637] text-[#6b696d] outline outline-[#6b696d] hover:outline-[#8783f4] outline-offset-2 outline-1 px-14 py-4 text-sm w-full rounded-md"
             />
           </div>
 
@@ -107,22 +107,22 @@ const index = () => {
                 </svg>
               </div>
             </div>
-            <p className="text-[#E1E0E2] text-xs pt-4 pb-4 tracking-wide">
+            <p className="text-[#E1E0E2] text-xs pt-4 pb-6 tracking-wide">
               Gorgeous design! Even more responsive than
               <br />
               the previous version. A pleasure to use!
             </p>
             <div className="flex relative rounded-md">
               <div className="text-[#6b696d] text-xs">Feb 13,2021</div>
-              <div className="absolute right-0 flex gap-2 border border-[#1D1C2C] p-1">
-                <Image src={upload} alt="upload" className="w-4 h-4" />
+              <div className="absolute right-0 flex gap-2 outline outline-[#1D1C2C] outline-1 hover:outline-[#8783f4] p-1">
+                <Image src={share} alt="upload" className="w-4 h-4" />
                 <button className="text-[#6b696d] text-xs">Share</button>
               </div>
             </div>
           </div>
           <div className="bg-[#2E2C41] rounded-md relative px-5 py-8 mt-2">
             <div className="flex">
-              <div className="w-10 h-10 bg-yellow-500 text-[#E1E0E2] flex justify-center items-center rounded-full">
+              <div className="w-10 h-10 bg-[#D3AB66] text-[#E1E0E2] flex justify-center items-center rounded-full">
                 A
               </div>
               <div className="text-[#E1E0E2] ml-4 flex justify-center items-center">
@@ -182,7 +182,7 @@ const index = () => {
                 </svg>
               </div>
             </div>
-            <p className="text-[#E1E0E2] text-xs pt-4 pb-4 tracking-wide">
+            <p className="text-[#E1E0E2] text-xs pt-4 pb-6 tracking-wide">
               The device has a clean design, and the metal
               <br />
               housing feels study in my hands.Soft rounded
@@ -191,8 +191,8 @@ const index = () => {
             </p>
             <div className="flex relative rounded-md">
               <div className="text-[#6b696d] text-xs">Feb 13,2021</div>
-              <div className="absolute right-0 flex gap-2 border border-[#1D1C2C] p-1">
-                <Image src={upload} alt="upload" className="w-4 h-4" />
+              <div className="absolute right-0 flex gap-2 outline outline-[#1D1C2C] outline-1 hover:outline-[#8783f4] p-1">
+                <Image src={share} alt="upload" className="w-4 h-4" />
                 <button className="text-[#6b696d] text-xs ">Share</button>
               </div>
             </div>
