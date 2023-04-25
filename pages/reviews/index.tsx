@@ -1,40 +1,51 @@
 import React from "react";
+import search from "../../public/search.svg";
+import upload from "../../public/upload1.png";
+import Image from "next/image";
 
 const index = () => {
   return (
-    <div className="bg-[#1D1C2C] flex justify-center items-center min-h-screen">
+    <div className="bg-[#1D1C2C] flex justify-center items-center min-h-screen py-20">
       <div className="max-w-screen-xl mx-auto bg-[#221F32]">
-        <div className="p-12 max-w-lg">
-          <h1 className="text-xl font-bold text-[#E1E0E2] mb-14">Reviews</h1>
-          <input
-            type="text"
-            placeholder="Search reviews"
-            className="bg-[#252637] text-[#E1E0E2] border px-16 py-4 text-sm w-full rounded-md"
-          />
+        <div className="p-12 max-w-md">
+          <h1 className="text-base font-bold text-[#E1E0E2] mb-10">Reviews</h1>
+          <div className="relative">
+            <Image
+              src={search}
+              alt="search"
+              className="absolute top-3 left-4"
+            />
+            <input
+              type="text"
+              placeholder="Search reviews"
+              className="bg-[#252637] text-[#6b696d] border border-[#6b696d] px-14 py-4 text-sm w-full rounded-md"
+            />
+          </div>
+
           <div className="flex gap-2 mt-10 flex-wrap">
-            <button className="text-[#6b696d] text-xs px-6 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
+            <button className="text-[#6b696d] text-xs px-4 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
               Experience
             </button>
-            <button className="text-[#6b696d] text-sm px-6 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
+            <button className="text-[#6b696d] text-xs px-4 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
               Quality
             </button>
-            <button className="text-[#6b696d] text-sm px-6 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
+            <button className="text-[#6b696d] text-xs px-4 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
               Design
             </button>
-            <button className="text-[#6b696d] text-sm px-6 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
+            <button className="text-[#6b696d] text-xs px-4 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
               Size
             </button>
-            <button className="text-[#6b696d] text-sm px-6 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
+            <button className="text-[#6b696d] text-xs px-4 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
               Features
             </button>
-            <button className="text-[#6b696d] text-sm px-6 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
+            <button className="text-[#6b696d] text-xs px-4 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
               Value
             </button>
-            <button className="text-[#6b696d] text-sm px-6 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
+            <button className="text-[#6b696d] text-xs px-4 py-3 rounded-md bg-[#1D1C2C] hover:bg-[#8783f4] hover:text-white">
               Replacement
             </button>
           </div>
-          <div className="bg-[#2E2C41] rounded-md relative p-6 mt-28">
+          <div className="bg-[#2E2C41] rounded-md relative px-5 py-8 mt-20">
             <div className="flex">
               <div className="w-10 h-10 bg-[#D46D68] text-[#E1E0E2] flex justify-center items-center rounded-full">
                 J
@@ -101,14 +112,15 @@ const index = () => {
               <br />
               the previous version. A pleasure to use!
             </p>
-            <div className="flex relative">
-              <div className="text-[#6b696d] text-sm">Feb 13,2021</div>
-              <button className="text-[#6b696d] text-sm absolute right-0 border border-[#1D1C2C]">
-                Share
-              </button>
+            <div className="flex relative rounded-md">
+              <div className="text-[#6b696d] text-xs">Feb 13,2021</div>
+              <div className="absolute right-0 flex gap-2 border border-[#1D1C2C] p-1">
+                <Image src={upload} alt="upload" className="w-4 h-4" />
+                <button className="text-[#6b696d] text-xs">Share</button>
+              </div>
             </div>
           </div>
-          <div className="bg-[#2E2C41] rounded-md relative p-6 mt-6">
+          <div className="bg-[#2E2C41] rounded-md relative px-5 py-8 mt-2">
             <div className="flex">
               <div className="w-10 h-10 bg-yellow-500 text-[#E1E0E2] flex justify-center items-center rounded-full">
                 A
@@ -177,11 +189,12 @@ const index = () => {
               <br />
               corners make it a pleasure yo look at.
             </p>
-            <div className="flex relative">
-              <div className="text-[#6b696d] text-sm">Feb 13,2021</div>
-              <button className="text-[#6b696d] text-sm absolute right-0 border border-[#1D1C2C]">
-                Share
-              </button>
+            <div className="flex relative rounded-md">
+              <div className="text-[#6b696d] text-xs">Feb 13,2021</div>
+              <div className="absolute right-0 flex gap-2 border border-[#1D1C2C] p-1">
+                <Image src={upload} alt="upload" className="w-4 h-4" />
+                <button className="text-[#6b696d] text-xs ">Share</button>
+              </div>
             </div>
           </div>
         </div>
