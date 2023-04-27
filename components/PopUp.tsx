@@ -8,7 +8,7 @@ const PopUp = ({}) => {
           X
         </div> */}
         <div className="bg-white p-2 rounded-md">
-          <div className="text-white">Form</div>
+          <div className="p-6">Form</div>
           <input placeholder="Name" className="px-6 py-2" />
           <input placeholder="Paragraph" className="px-6 py-2" />
           <input placeholder="Date" className="px-6 py-2" />
