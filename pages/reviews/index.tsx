@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import search from "../../public/search1.svg";
 import share from "../../public/share1.png";
 import Image from "next/image";
+import PopUp from "@/components/PopUp";
 
 const index = () => {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <div className="bg-[#1D1C2C] flex justify-center items-center min-h-screen py-20">
       <div className="max-w-screen-xl mx-auto bg-[#221F32]">
-        <div className="p-12 max-w-md">
-          <h1 className="text-base font-bold text-[#E1E0E2] mb-10">Reviews</h1>
+        <div className="p-12 max-w-md relative">
+          <div className="mb-10 flex relative">
+            <h1 className="text-base font-bold text-[#E1E0E2]">Reviews</h1>
+            <button
+              className="text-base font-bold text-[#E1E0E2] absolute right-0 top-0 rounded-md outline outline-[#1D1C2C]
+             outline-1 hover:outline-[#8783f4] px-2 py-1"
+              onClick={() => {
+                setShowPopup(true);
+              }}
+            >
+              Add
+            </button>
+          </div>
+
           <div className="relative">
             <Image
               src={search}
@@ -114,7 +128,7 @@ const index = () => {
             </p>
             <div className="flex relative rounded-md">
               <div className="text-[#6b696d] text-xs">Feb 13,2021</div>
-              <div className="absolute right-0 flex gap-2 outline outline-[#1D1C2C] outline-1 hover:outline-[#8783f4] p-1">
+              <div className="absolute right-0 flex gap-2 outline outline-[#1D1C2C] outline-1 hover:outline-[#8783f4] p-1 cursor-pointer">
                 <Image src={share} alt="upload" className="w-4 h-4" />
                 <button className="text-[#6b696d] text-xs">Share</button>
               </div>
@@ -191,7 +205,7 @@ const index = () => {
             </p>
             <div className="flex relative rounded-md">
               <div className="text-[#6b696d] text-xs">Feb 13,2021</div>
-              <div className="absolute right-0 flex gap-2 outline outline-[#1D1C2C] outline-1 hover:outline-[#8783f4] p-1">
+              <div className="absolute right-0 flex gap-2 outline outline-[#1D1C2C] outline-1 hover:outline-[#8783f4] p-1 cursor-pointer">
                 <Image src={share} alt="upload" className="w-4 h-4" />
                 <button className="text-[#6b696d] text-xs ">Share</button>
               </div>
@@ -199,6 +213,7 @@ const index = () => {
           </div>
         </div>
       </div>
+      {showPopup ? <PopUp /> : null}
     </div>
   );
 };
