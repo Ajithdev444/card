@@ -3,11 +3,16 @@ import search from "../../public/search1.svg";
 
 import Image from "next/image";
 import PopUp from "@/components/PopUp";
-import { comments } from "../../data/comments.json";
 import ReviewComponent from "@/components/ReviewComponent";
 
 const index = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [rev, setRev] = useState([
+    { names: "Jesse", reviews: "great Design" },
+    { names: "Ajithdev", reviews: "great art" },
+    { names: "John", reviews: "great Design and art" },
+    { names: "John", reviews: "great Design and art" },
+  ]);
   return (
     <div className="bg-[#1D1C2C] flex justify-center items-center min-h-screen py-20">
       <div className="max-w-screen-xl mx-auto bg-[#221F32]">
@@ -62,10 +67,12 @@ const index = () => {
             </button>
           </div>
 
-          <ReviewComponent
-            names="Jesse Hopkins"
-            reviews="Georges design! Even more responsive than the previous version.A pleasure to use"
-          />
+          {rev.map((revi) => {
+            console.log(revi);
+            return (
+              <ReviewComponent names={revi.names} reviews={revi.reviews} />
+            );
+          })}
         </div>
       </div>
       {showPopup ? <PopUp /> : null}
@@ -74,3 +81,10 @@ const index = () => {
 };
 
 export default index;
+
+{
+  /* <ReviewComponent
+            names="Jesse Hopkins"
+            reviews="Georges design! Even more responsive than the previous version.A pleasure to use"
+          /> */
+}

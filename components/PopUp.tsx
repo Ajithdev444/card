@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "reactstrap";
+import { NextPage } from "next";
 
 const PopUp = () => {
   const [close, setClose] = useState(true);
@@ -20,7 +21,7 @@ const PopUp = () => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-25 flex justify-center items-center">
-      <Form className="w-[600px] flex flex-col">
+      <form className="w-[600px] flex flex-col">
         {close && (
           <div className="bg-white p-2 rounded-md">
             <div className="p-6 flex relative">
@@ -48,18 +49,12 @@ const PopUp = () => {
               placeholder="Review"
               className="px-6 py-2"
             />
-            {/* <input
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              placeholder="Date"
-              className="px-6 py-2"
-            /> */}
             <button type="submit" onClick={submitComment} className="px-6 py-2">
               Submit
             </button>
           </div>
         )}
-      </Form>
+      </form>
     </div>
   );
 };
