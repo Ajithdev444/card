@@ -14,7 +14,7 @@ const index = () => {
     { names: "John", reviews: "great Design and art" },
   ]);
   return (
-    <div className="bg-[#1D1C2C] flex justify-center items-center min-h-screen py-20">
+    <div className="bg-[#1D1C2C] flex justify-center items-center min-h-screen py-18">
       <div className="max-w-screen-xl mx-auto bg-[#221F32]">
         <div className="p-12 max-w-md relative">
           <div className="mb-10 flex relative">
