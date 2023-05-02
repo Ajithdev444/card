@@ -36,7 +36,7 @@ const index = () => {
             button1="Development"
             button2="Architecture"
             people="7 people work on this"
-            comment="17 comments"
+            comment="7 comments"
           />
           <ProgressComponent
             src={addidas}
@@ -44,8 +44,8 @@ const index = () => {
             heading="Initial landing page concepts"
             button1="Development"
             button2="Architecture"
-            people="3 people work on this"
-            comment="17 comments"
+            people="4 people work on this"
+            comment="2 comments"
           />
         </div>
       </div>
