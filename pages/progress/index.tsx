@@ -4,6 +4,7 @@ import React from "react";
 import uber1 from "../../public/uber.jpg";
 import bosch from "../../public/Bosch1.png";
 import addidas from "../../public/addidas.png";
+import plusicon from "../../public/plusicon.svg";
 
 const index = () => {
   return (
@@ -21,7 +22,7 @@ const index = () => {
             comment="17 comments"
           />
           <ProgressComponent
-            src={bosch}
+            src={uber1}
             level="Medium"
             heading="Update requirements list"
             button1="Development"
@@ -47,6 +48,10 @@ const index = () => {
             people="4 people work on this"
             comment="2 comments"
           />
+          <div className="flex gap-2 justify-center items-center">
+            <Image src={plusicon} alt="plusicon" />
+            <button className="text-gray-400 py-4">Add new card</button>
+          </div>
         </div>
       </div>
     </div>
