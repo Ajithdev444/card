@@ -1,13 +1,13 @@
-// import { NextApiRequest, NextApiResponse } from "next";
-// import { comments } from "../../../data/comments.json";
-// import ReviewComponent from "@/components/ReviewComponent";
-// type Data = {
-//   name: string;
-//   review: string;
-//   id: number;
-//   message: string;
-//   userdata: string;
-// };
+import { NextApiRequest, NextApiResponse } from "next";
+import { comments } from "../../../data/comments.json";
+import ReviewComponent from "@/components/ReviewComponent";
+type Data = {
+  name: string;
+  review: string;
+  id: number;
+  message: string;
+  userdata: string;
+};
 
 // function handler(req: NextApiRequest, res: NextApiResponse<Data[]>) {
 //   if (req.method === "GET") {
