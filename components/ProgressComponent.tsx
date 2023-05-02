@@ -41,12 +41,12 @@ const ProgressComponent: NextPage<Props> = (props) => {
               {button2}
             </button>
           </div>
-          <div className="flex py-4 relative">
+          <div className="flex pt-4 relative">
             <Image src={person} alt="person" className="w-4 h-4" />
             <div className="text-gray-400 text-[10px]">{people}</div>
-            <div className="flex absolute right-2">
+            <div className="flex absolute gap-1 right-2">
               <Image src={comments} alt="comments" className="w-4 h-4" />
-              <div className="text-gray-400 text-[10px] ">{comment}</div>
+              <div className="text-gray-400 text-[10px]">{comment}</div>
             </div>
           </div>
         </div>
