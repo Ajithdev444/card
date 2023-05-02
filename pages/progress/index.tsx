@@ -30,7 +30,7 @@ const index = () => {
             comment="8 comments"
           />
           <ProgressComponent
-            src={uber1}
+            src={bosch}
             level="Low"
             heading="New UI for dashboard"
             button1="Development"

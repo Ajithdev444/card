@@ -23,7 +23,7 @@ const ProgressComponent: NextPage<Props> = (props) => {
         <div className="">
           <Image src={src} alt="uber1" className="w-10 h-10 rounded-full" />
         </div>
-        <div className="relative">
+        <div className="relative min-w-full">
           <div className="flex">
             <button className="bg-[#f55f92] rounded-md text-white text-[8px] px-2 py-0.5">
               {level}
