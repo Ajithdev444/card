@@ -1,23 +1,17 @@
-import React, { useState } from "react";
-import { Form } from "reactstrap";
 import { NextPage } from "next";
+import React, { useState } from "react";
+import ReviewComponent from "./ReviewComponent";
 
-const PopUp = () => {
+interface Props {
+  handleSubmit: (name: string, review: string) => void;
+}
+
+const PopUp = (props: Props) => {
+  const { handleSubmit } = props;
+
   const [close, setClose] = useState(true);
   const [name, setName] = useState("");
   const [review, setReview] = useState("");
-
-  const submitComment = async () => {
-    const response = await fetch("/api/comments", {
-      method: "POST",
-      body: JSON.stringify({ name, review }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    const data = await response.json();
-    // console.log(data);
-  };
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-25 flex justify-center items-center">
@@ -37,19 +31,34 @@ const PopUp = () => {
             </div>
             <label>Name</label>
             <input
+              id="name"
+              type="text"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
               placeholder="Name"
               className="px-6 py-2"
             />
             <label>Review</label>
             <input
+              id="review"
+              type="text"
               value={review}
-              onChange={(e) => setReview(e.target.value)}
+              onChange={(e) => {
+                setReview(e.target.value);
+              }}
               placeholder="Review"
               className="px-6 py-2"
             />
-            <button type="submit" onClick={submitComment} className="px-6 py-2">
+            <button
+              type="button"
+              className="px-6 py-2"
+              onClick={() => {
+                handleSubmit(name, review);
+                setClose(false);
+              }}
+            >
               Submit
             </button>
           </div>

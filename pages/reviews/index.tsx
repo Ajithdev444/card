@@ -1,18 +1,29 @@
 import React, { useState } from "react";
 import search from "../../public/search1.svg";
-
 import Image from "next/image";
+import { NextPage } from "next";
+import share from "../../public/share1.png";
 import PopUp from "@/components/PopUp";
 import ReviewComponent from "@/components/ReviewComponent";
 
+interface ReviewComponentItem {
+  name: string;
+  review: string;
+}
+
 const index = () => {
   const [showPopup, setShowPopup] = useState(false);
-  const [rev, setRev] = useState([
-    { names: "Jesse", reviews: "great Design" },
-    { names: "Ajithdev", reviews: "great art" },
-    { names: "John", reviews: "great Design and art" },
-    { names: "John", reviews: "great Design and art" },
-  ]);
+  const [list, setList] = useState<ReviewComponentItem[]>([]);
+
+  const handleSubmits = (name: string, review: string) => {
+    const newListItem = {
+      name: name,
+      review: review,
+    };
+    setList([...list, newListItem]);
+    console.log("you are logged");
+  };
+
   return (
     <div className="bg-[#1D1C2C] flex justify-center items-center min-h-screen py-18">
       <div className="max-w-screen-xl mx-auto bg-[#221F32]">
@@ -22,6 +33,7 @@ const index = () => {
             <button
               className="text-base font-bold text-[#E1E0E2] absolute right-0 top-0 rounded-md outline outline-[#1D1C2C]
              outline-1 hover:outline-[#8783f4] px-2 py-1"
+              type="button"
               onClick={() => {
                 setShowPopup(true);
               }}
@@ -67,24 +79,18 @@ const index = () => {
             </button>
           </div>
 
-          {rev.map((revi) => {
-            console.log(revi);
+          {list.map((lis, key) => {
             return (
-              <ReviewComponent names={revi.names} reviews={revi.reviews} />
+              <div key={key}>
+                <ReviewComponent listName={lis.name} listReview={lis.review} />
+              </div>
             );
           })}
         </div>
+        {showPopup ? <PopUp handleSubmit={handleSubmits} /> : null}
       </div>
-      {showPopup ? <PopUp /> : null}
     </div>
   );
 };
 
 export default index;
-
-{
-  /* <ReviewComponent
-            names="Jesse Hopkins"
-            reviews="Georges design! Even more responsive than the previous version.A pleasure to use"
-          /> */
-}
