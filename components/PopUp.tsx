@@ -38,7 +38,7 @@ const PopUp = (props: Props) => {
                 setName(e.target.value);
               }}
               placeholder="Name"
-              className="px-6 py-2"
+              className="px-5 py-2"
             />
             <label>Review</label>
             <input
@@ -49,11 +49,11 @@ const PopUp = (props: Props) => {
                 setReview(e.target.value);
               }}
               placeholder="Review"
-              className="px-6 py-2"
+              className="px-5 py-2"
             />
             <button
               type="button"
-              className="px-6 py-2"
+              className="px-5 py-2"
               onClick={() => {
                 handleSubmit(name, review);
                 setClose(false);
