@@ -12,7 +12,7 @@ const ReviewComponent: NextPage<Props> = (props) => {
 
   return (
     <div>
-      <div>
+      <div className="">
         <div className="bg-[#2E2C41] rounded-md relative px-5 py-8 mt-20">
           <div className="flex">
             <div className="w-10 h-10 bg-[#D46D68] text-[#E1E0E2] flex justify-center items-center rounded-full">

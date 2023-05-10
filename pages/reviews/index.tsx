@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import search from "../../public/search1.svg";
 import Image from "next/image";
-import { NextPage } from "next";
-import share from "../../public/share1.png";
 import PopUp from "@/components/PopUp";
 import ReviewComponent from "@/components/ReviewComponent";
 
@@ -13,6 +11,7 @@ interface ReviewComponentItem {
 
 const index = () => {
   const [showPopup, setShowPopup] = useState(false);
+
   const [list, setList] = useState<ReviewComponentItem[]>([]);
 
   const handleSubmits = (name: string, review: string) => {
@@ -33,8 +32,8 @@ const index = () => {
             <button
               className="text-base font-bold text-[#E1E0E2] absolute right-0 top-0 rounded-md outline outline-[#1D1C2C]
              outline-1 hover:outline-[#8783f4] px-2 py-1"
-              type="button"
               onClick={() => {
+                console.log("you are clicked");
                 setShowPopup(true);
               }}
             >
@@ -78,7 +77,6 @@ const index = () => {
               Replacement
             </button>
           </div>
-
           {list.map((lis, key) => {
             return (
               <div key={key}>
@@ -87,7 +85,13 @@ const index = () => {
             );
           })}
         </div>
-        {showPopup ? <PopUp handleSubmit={handleSubmits} /> : null}
+        {showPopup && (
+          <PopUp
+            trigger={showPopup}
+            setTrigger={setShowPopup}
+            handleSubmit={handleSubmits}
+          />
+        )}
       </div>
     </div>
   );
